@@ -20,13 +20,9 @@ int main()
     set_number_of_args(&input_line);
     if ( isThereArgs(&input_line) == 0 )
           continue; ; 
-   // printf("number of arguments = %d\n", input_line.arg_count);
     alloc_mem_for_arg(&input_line);
     parse_input(&input_line); 
-    // for (int i = 0 ; i < input_line.arg_count ; i++)
-    // {
-    //     printf("arg[%d] = %s\n" , i , input_line.arg_list[i]);
-    // }
+   
     pid_t pid = fork();
     if (pid > 0) // executer process
     {
@@ -40,8 +36,7 @@ int main()
       char *const newargv[] = {NULL};
       char *const newenvp[] = {"ADEL", NULL};
 
-//      int flag = execve(input_line.arg_list[0],(const char * const *)(input_line.arg_list), environ);
-//	int flag = execve(input_line.arg_list[0],(const char * const *)(input_line.arg_list), newenvp);
+
 	int flag = execvp(input_line.arg_list[0] ,(input_line.arg_list));
 
       if (-1 == flag)
