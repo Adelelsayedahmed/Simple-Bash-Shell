@@ -1,5 +1,5 @@
 # Simple-Bash-Shell
-implementing simple bash for learning objectives dealling with system calls in linux and its wrapper functions 
+implementing simple bash for learning objectives as dealling with processes, file I/O, and linux and its wrapper functions 
 
 
 
