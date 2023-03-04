@@ -35,7 +35,7 @@ int main()
       dealloc_mem_for_arg(&input_line) ; // deallocate the memory that is dynamically allocated to store the arguments
     }
 
-    else if (pid == 0) // the new process
+    else if (0 == pid) // the new process
     {
 
 	int flag = execvp(input_line.arg_list[0] ,(input_line.arg_list)); // load the image of the new program by passing the name of the executable and the argv[]
