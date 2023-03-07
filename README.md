@@ -1,4 +1,4 @@
-# Simple-linux-Shell
+# Simple-Linux-Shell
 implementing simple bash for learning objectives as dealling with processes, file I/O, and System calls in linux and its wrapper functions 
 
 
